@@ -9,6 +9,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   #response.send('Hello World!');
   # buffer = fs.readFileSync("/home/ubuntu/bitstarter/index.html");
+   console.log(buffer.toString());
    response.send(buffer.toString());
 });
 
