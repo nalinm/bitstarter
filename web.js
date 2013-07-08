@@ -2,13 +2,13 @@ var fs = require('fs');
 
 var express = require('express');
 
-var buffer = new Buffer(100);
+var buffer = new Buffer('hello world 10');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   #response.send('Hello World!');
-   buffer = fs.readFileSync("/home/ubuntu/bitstarter/index.html");
+  # buffer = fs.readFileSync("/home/ubuntu/bitstarter/index.html");
    response.send(buffer.toString());
 });
 
